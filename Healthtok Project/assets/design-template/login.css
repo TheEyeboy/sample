@@ -1,0 +1,186 @@
+.login__section {
+    position: relative;
+    margin: 0 50px;
+    padding: 5% 50px;
+}
+.login__container {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.login__container .login__left__container {
+    background: linear-gradient(#ffffff89, #000080ab), url(../background-img/hero-banner.jpeg);
+    background-size: cover;
+    padding: 5% 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-basis: 48% !important;
+}
+
+.login__left__container .text__wrapper{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    padding: 60px 10%;
+    margin: 12px 20px;
+}
+
+.text__wrapper h1 {
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: left;
+}
+.text__wrapper span {
+    font-size: 30px;
+    color: #000000;
+    display: block;
+}
+.text__wrapper p {
+    font-size: 18px;
+    font-family: "Josefin Sans";
+    color: #ffffff;
+}
+
+.login__container .login__right__container {
+    background-color: #ffffff8b;
+    padding: 0% 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #c7c7c759;
+    flex-basis: 48% !important;
+}
+form{
+    background-color: #ffffff00;
+    padding-block-start: 10px;
+    margin-block-end: 10px;
+}
+.form__logo {
+    margin-left: 10px;
+}
+.form__logo img {
+    width: 200px;
+}
+form .input__container {
+    background-color: #ffffff00;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.input__container h2 {
+    margin-block-end: 0;
+    font-size: 20px;
+}
+.input__container p {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    color: #393838ca;
+}
+.input__container span {
+    padding-block-end: 0;
+}
+.input__container .email__span, .input__container .password__span {
+    padding-block-end: 7px;
+}
+
+.input__container input {
+    margin-block-end: 20px;
+    padding: 5% 20px;
+    border: #c8c6c677 1px solid;
+    border-radius: 10px;
+}
+.input__container input[type="email"], .input__container input[type="password"]{
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    font-size: 15px;
+    color: #656464;
+}
+form .forgot__password__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5.8%;
+    padding: 0 10px;
+}
+.forgot__password__wrapper .remember__me {
+    display: flex;
+    margin: 20px 0;
+    padding: 0px;
+}
+.forgot__password__wrapper .remember__me h4 {
+    font-family: "Josefin Sans";
+    color: #000000cd;
+    padding: 0;
+}
+.forgot__password__wrapper .forgot__password__btn {
+    font-size: 16px;
+    color: #1304dfcd;
+}
+
+.login__btn__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 8%;
+}
+.login__btn {
+    background: linear-gradient(45deg, #000080, #8133ed);
+    padding: 20px;
+    border-radius: 13px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-block-end: 10px;
+    transition: ease-in-out 0.6s;
+}
+a.login__btn:hover {
+    background-color: #87879e;
+}
+.login__btn__container button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    padding: 6px;
+    font-size: 15px;
+    margin-block-end: 0;
+    border: 1px solid #ababbb;
+    border-radius: 13px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.login__btn__container button img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+@media only  screen and (max-width: 768px) {
+    .login__left__container {
+        display: none;
+    }
+    .login__section {
+        margin-top: 40px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .login__right__container{
+        border-radius: 20px;
+        padding: 0% 3px;
+        margin-left: auto;
+        margin-right: 50px;
+        width: 100vw !important;
+    }
+    form .input__container {
+        padding: 0 20px;
+    }
+}

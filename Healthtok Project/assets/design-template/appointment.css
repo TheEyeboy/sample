@@ -1,0 +1,98 @@
+.appointment__intro {
+    margin-block-start: 30px;
+    padding-block-start: 40px;
+}
+.appointment__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background-size: cover;
+    padding-block-start: 20px;
+    padding-block-end: 50px;
+}
+h3{
+    font-family: "Josefin Sans";
+    font-size: 30px;
+    font-weight: bolder;
+    color:#1a2b48;
+    text-align:center;
+    text-transform: uppercase;
+}
+h5 {
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    text-align: center;
+    margin-right: 25px;
+}
+.appointment__container {
+   background-color: #eae9e3;
+   text-align: center;
+}
+.appointment__container form{
+    background-color: #aac1e9;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start: 10px;
+    padding-block-start: 10px;
+    border-radius: 20px;
+}
+.form__container input {
+    width: 70%;
+    padding: 15px 30px;
+    margin-block-end: 20px;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.form__container input[type="text"], input[type="tel"], input[type="Email"]{
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    color: white;
+}
+.form__container input::placeholder {
+    font-size: 16px;
+    color: white;
+    font-family: "Josefin Sans";
+}
+.form__container select {
+    margin-right: 40px;
+    width: 70%;
+    padding: 15px 30px;
+    margin-block-end: 10px;
+    border: none;
+    border-radius: 20px;
+    padding-inline-end: 20px;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+}
+.form__container option {
+    font-size: 15px;
+    font-family: "Josefin Sans";
+}
+.form__container textarea{
+    width: 50%;
+    margin-right: 60px;
+    margin-block: 30px;
+    padding: 20px 60px;
+    background-color: transparent;
+    border: none;
+    border-bottom: #ffffff 2px solid;
+    border-radius: 20px;
+}
+
+.form__container button {
+    padding: 17px 40px;
+    margin-right: 60px;
+    width: 300px;
+    font-size: 17px;
+    font-family: "Josefin Sans";
+    background-color: #0615a1;
+    color: #ffffff;
+    border-radius: 20px;
+}

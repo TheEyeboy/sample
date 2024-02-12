@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/design-template/appointment.css">
+    <link rel="stylesheet" href="/assets/design-template/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header__header">
+        <nav class="nav__container container">
+            <div class="nav__left__wrapper">
+                <img src="../header-banner/logo-h.png" alt="">
+            </div>
+
+            <div class="nav__right__wrapper">
+                <div class="side__nav__img">
+                    <img src="../header-banner/logo-h.png" alt="">
+                </div>
+                <ul class="nav__list">
+                    <button class="close">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <li>
+                        <a href="video.html" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="video.html" class="nav__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">Service</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">About</a>
+                    </li>
+                </ul>
+
+                <div class="nav__icon__items">
+                    <a href="" class="nav__icon__link"> <i class="ri-search-line"></i></a>
+                    <input type="search" placeholder="Search Here..." value="">
+                 </div>
+            </div>
+
+            <div class="nav__icon__wrapper">
+
+                <input type="checkbox" name="showMenu" id="checked" class="menu__toggle">
+                <label for="checked"  class="toggle"><i class="ri-menu-3-fill"></i></label>
+            </div>
+            <div class="nav__search">
+                <a href="" class="nav__icon__link"> <i class="ri-search-line"></i></a>
+                <input type="search" placeholder="Search Here..." value="">
+             </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="appointment__container container">
+            <form action="">
+                <h3 class="appointment__heading">Make an Appointment</h3>
+                <div class="form__container">
+                <label for="patient_name">Patient's Name:</label>
+                <input type="text" id="patient_name" name="patient_name" placeholder="Parent's Name..." required>
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone..." required>
+
+                <label for="email_address">Email Address:</label>
+                <input type="email" id="email_address" name="email_address" placeholder="Email Address..." required>
+
+
+
+
+                <div class="select__container">
+                    <label for="appointment_type">Appointment Type:</label>
+                    <select name="appointment_type" id="appointment_type">
+                        <option value="general_checkup">General Checkup</option>
+                        <option value="follow_up">Follow-up</option>
+                        <option value="specialist_consultation">Specialist Consultation</option>
+                        <option value="vaccination">Vaccination</option>
+                        <option value="vaccination">Vaccination</option>
+                        <option value="dental_checkup">Dental Checkup</option>
+                        <option value="eye_exam">Eye Exam</option>
+                        <option value="blood_test">Blood Test</option>
+                        <option value="physical_therapy">Physical Therapy</option>
+                        <option value="mental_health_counseling">Mental Health Counseling</option>
+                        <option value="nutrition_consultation">Nutrition Consultation</option>
+                    </select>
+                </div>
+
+                <div class="select__container">
+                    <h5>What Symptoms are you experiencing</h5>
+                    <select name="symptoms" id="symptoms">
+                        <option value="fever">Fever</option>
+                        <option value="cough">Cough</option>
+                        <option value="shortness_of_breath">Shortness of Breath</option>
+                        <option value="fatigue">Fatigue</option>
+                        <option value="headache">Headache</option>
+                        <option value="muscle_aches">Muscle Aches</option>
+                        <option value="loss_of_taste">Loss of Taste</option>
+                        <option value="loss_of_smell">Loss of Smell</option>
+                        <option value="sore_throat">Sore Throat</option>
+                        <option value="nausea">Nausea</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="select__container">
+                    <h5>Have You Experienc this Before</h5>
+                    <label for="preferred_doctor">Preferred Doctor:</label>
+                        <select name="preferred_doctor" id="preferred_doctor">
+                            <option value="Dr_Smith">Dr. Smith</option>
+                            <option value="Dr_Jones">Dr. Jones</option>
+                            <option value="Dr_Wang">Dr. Wang</option>
+                            <option value="Dr_Smith">Dr. Smith</option>
+                            <option value="Dr_Jones">Dr. Jones</option>
+                            <option value="Dr_Wang">Dr. Wang</option>
+                            <option value="Dr_Smith">Dr. Smith</option>
+                            <option value="Dr_Jones">Dr. Jones</option>
+                            <option value="Dr_Wang">Dr. Wang</option>
+                            
+                        </select>
+                </div>
+
+                <div class="select__container">
+                    <h5>Have You Experienc this Before</h5>
+                    <label for="appointment_time">Preferred Time:</label>
+                    <select name="appointment_time" id="appointment_time">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <!-- Add more specific time slots as needed -->
+                    </select>
+                </div>
+
+
+                <label for="additional_notes">Additional Notes:</label>
+                <textarea id="additional_notes" name="additional_notes" rows="4" cols="50"></textarea>
+
+                <button type="submit"> Submit</button>
+
+            </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

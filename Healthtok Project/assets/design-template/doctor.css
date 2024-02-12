@@ -1,0 +1,190 @@
+.main__container {
+    margin: 0 9.5rem;
+    padding: 0 2.6rem;
+}
+
+
+
+/* Main Body section */
+.section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__left__wrapper {
+    text-align: left;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+.section__left__wrapper h1 {
+    font-size: 40px;
+    font-family: "Roboto";
+    font-weight: 800;
+    text-align: left;
+    margin-right: 20px;
+    padding-left: 10px;
+    color: #000080;
+    margin-block-end: 10px;
+}
+.section__left__wrapper p {
+    font-size: 16px;
+    font-family: "Josefin Sans";
+    text-align: left;
+    padding-left: 10px;
+}
+.section__left__wrapper button {
+    background-color: transparent;
+    padding: 15px 30px;
+    color: #ffffff;
+    margin-right: 30px;
+}
+.media__query__btn {
+    display: none;
+}
+.section__left__wrapper button a {
+    background-color: #000080;
+    padding: 15px 32px;
+    color: #ffffff;
+    border-radius: 30px;
+}
+.schedule {
+    background-color: #ececef;
+    text-align: left;
+    padding: 10px 25px;
+    width: 50%;
+    margin-top: 16px;
+    border-radius: 10px;
+    box-shadow: #91919b 2px 5px 10px;
+    margin-left: 12px;
+}
+.schedule h4 {
+    font-family: "Josefin Sans";
+}
+.schedule span {
+    font-size: 14px;
+    font-family: "Josefin Sans";
+}
+
+.section__right__wrapper img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 16px 28px  1px rgba(2, 53, 206, 0.3);
+}
+
+/* Category section */
+.category__wrapper {
+    position: relative;
+    padding-block: 40px;
+}
+.category__wrapper h2 {
+    text-align: center;
+    margin: 20px 10px;
+    padding: 30px 20px;
+    font-size: 45px;
+}
+.category__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    gap: 30px;
+}
+
+.category__container img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.category__right {
+    margin-left: 30px;
+}
+.category__right h3 {
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    font-size: 30px;
+    color: #000080;
+}
+.category__right p {
+    font-size: 16px;
+    color: #000080;
+    font-family: "Josefin Sans";
+}
+.category__right span {
+    display: block;
+}
+
+
+@media only screen and (max-width: 480px){
+    .main__container{
+        margin: 0;
+        padding: 0;
+    }
+    .section__wrapper {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background: linear-gradient(30deg, #0202533d, #b0b0dad1), url(../background-img/hero-banner.jpeg);
+    }
+    .section__left__wrapper {
+        max-width: none;
+        margin-left: 30px;
+        margin-right: 20px;
+        padding-block-start: 50px;
+        margin-block-start: 20px;
+        text-align: center;
+    }
+    .section__left__wrapper h1{
+        margin-left: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .section__left__wrapper p{
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .section__left__wrapper button {
+        text-align: center;
+        display: none;
+    }
+    .media__query__btn {
+        display: block;
+    }
+    .schedule{
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+    .section__right__wrapper {
+        margin-top: 20px;
+    }
+    .section__right__wrapper img {
+        width: 280px;
+        text-align: center;
+        margin-left: 0%;
+        box-shadow: none;
+        background-color: #000080;
+    }
+    .category__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .category__container h3 {
+        font-size: 25px;
+    }
+    .category__wrapper h2 {
+        font-size: 25px;
+    }
+.category__container img {
+    width: 300px;
+    object-fit: cover;
+}
+}
